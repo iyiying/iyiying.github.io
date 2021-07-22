@@ -1,0 +1,160 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background: #f2e4eb; }
+
+/* HEADING */
+/* ================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Great Vibes", sans-serif;
+  margin: 0; }
+
+#banner-standart-1 {
+  height: 100vh;
+  position: relative;
+  background: #e2dbe7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  overflow: hidden; }
+  #banner-standart-1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f2e4eb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1; }
+  #banner-standart-1 .container-fluid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #banner-standart-1 .banner-content {
+    text-align: center; }
+  #banner-standart-1 .banner-sub-heading {
+    margin-bottom: 90px; }
+    #banner-standart-1 .banner-sub-heading h2 {
+      padding: 15px 30px;
+      border-top: 4px dotted #beadc9;
+      border-bottom: 4px dotted #beadc9;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.44em;
+      color: #79578e;
+      display: inline-block;
+      position: relative; }
+      #banner-standart-1 .banner-sub-heading h2::before, #banner-standart-1 .banner-sub-heading h2::after {
+        content: "";
+        background: #beadc9;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      #banner-standart-1 .banner-sub-heading h2::before {
+        left: 0; }
+      #banner-standart-1 .banner-sub-heading h2::after {
+        right: 0; }
+  #banner-standart-1 .banner-heading {
+    width: 40%;
+    height: auto;
+    position: relative;
+    margin: 30px auto; }
+    @media (max-width: 540px) {
+      #banner-standart-1 .banner-heading {
+        width: 100%; } }
+    #banner-standart-1 .banner-heading h1 {
+      font-size: 45px;
+      line-height: 60px;
+      color: #5c3575;
+      display: inline-block;
+      background: transparent;
+      opacity:0.9;
+      padding: 10px 50px;
+      position: relative;
+      z-index: 1; }
+      #banner-standart-1 .banner-heading h1::before {
+        z-index: -1;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff3f1;
+        border-radius: 60px;
+        mask: url("../img/rectangle.svg"), url("../img/elipse.svg"), url("../img/elipse.svg");
+        mask-repeat: repeat, no-repeat, no-repeat;
+        mask-size: 100%, 20px, 20px;
+        mask-position: 0 0, 30px calc(50%), calc(100% - 30px) calc(50%);
+        mask-composite: source-out; }
+  #banner-standart-1 .flower {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    #banner-standart-1 .flower.left {
+      left: 60px;
+      transform: translateY(-50%) rotate(-90deg); }
+    #banner-standart-1 .flower.right {
+      right: 60px;
+      transform: translateY(-50%) rotate(-90deg) rotateX(180deg); }
+    #banner-standart-1 .flower img {
+      width: 230px;
+      height: auto; }
+  #banner-standart-1 .banner-date ul {
+    list-style-type: none;
+    padding: 10px 0;
+    background: #5c3575;
+    border-radius: 30px;
+    width: 250px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    #banner-standart-1 .banner-date ul::before {
+      content: "";
+      width: calc(100% + 30px);
+      height: calc(100% + 30px);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px dashed #beadc9;
+      border-radius: 60px; }
+    #banner-standart-1 .banner-date ul li {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #fff3f1; }
+    #banner-standart-1 .banner-date ul li > span.dot {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #79578e;
+      border-radius: 100%;
+      margin: 0 10px; }
+  #banner-standart-1 .banner-detail {
+    position: relative;
+    padding-top: 40px; }
+    #banner-standart-1 .banner-detail h3 {
+      font-size: 26px;
+      line-height: 26px;
+      color: #ad658b;
+      margin-bottom: 20px; }
+    #banner-standart-1 .banner-detail p {
+      font-size: 12px;
+      line-height: 166.66667%;
+      letter-spacing: 0.2em;
+      color: #79578e;
+      width: 300px;
+      margin: 0 auto; }

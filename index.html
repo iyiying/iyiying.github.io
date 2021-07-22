@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Love">
+    <title>My Love</title>
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <section id="banner-standart-1" style="background-image:url(&#39;&#39;)">
+        <div class="container-fluid">
+          <div class="banner-content">
+            <div class="banner-sub-heading">
+              <!-- this is sub heading-->
+              <h2 class="text-uppercase">My Love</h2>
+            </div>
+            <div class="banner-heading">
+              <div class="flower left"><img src="./assets/flower.svg" alt="banner flower image"></div>
+              <div class="flower right"><img src="./assets/flower.svg" alt="banner flower image"></div>
+              <h1 class="">Hello, <span id="my-world" onmouseover="showMyWorld(false)" onmouseout="showMyWorld(true)">盈盈</span></h1>
+            </div>
+            <div class="banner-date">
+              <ul>
+                <li id="days"></li>
+                <li><span class="dot"></span></li>
+                <li>Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
+<script>
+	var nowDate = new Date();
+	var firstDay = new Date("04/20/2021");
+	var days = nowDate.getTime() - firstDay.getTime();
+	var days = Math.floor(days / (1000 * 3600 * 24));
+  var y=document.getElementById("days").innerHTML = days;
+</script>
